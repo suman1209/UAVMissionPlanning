@@ -77,9 +77,7 @@ class AirSimClientWrapper(gym.Env):
         else:
             # For CV mode, just reset pose to origin
             origin_pose = airsim.Pose()
-            self.client.simSetVehiclePose(origin_pose, ignore_collision=True)
-        self.topdown_map = self.capture_top_down_map(altitude=self.topdown_map_altitude, save_path=None)
-        self.topdown_map_with_drone = self.plot_drone_on_topdown_map(self.topdown_map, save_path="true")
+            self.client.simSetVehiclePose(origin_pose, ignore_collision=True
         # Return initial observation
         return self._get_observation()
 
