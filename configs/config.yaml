@@ -1,0 +1,4 @@
+environment: Africa_001 # AirSimNH, Africa_001, AirVLN, ForestEnv
+rendering: False # headless mode (False)
+ActiveSimMode: ComputerVision  # Multirotor or ComputerVision
+
